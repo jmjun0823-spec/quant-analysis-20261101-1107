@@ -5,6 +5,10 @@ on:
     - cron: '0 0 */3 * *'
   workflow_dispatch:
 
+# 아래 permissions 블록을 추가하여 쓰기 권한 부여
+permissions:
+  contents: write
+
 jobs:
   run-analysis:
     runs-on: ubuntu-latest
