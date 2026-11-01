@@ -6,6 +6,8 @@ class DataCollector:
         self.start_date = start_date
         self.end_date = end_date
         self.tickers = {
+            'KOSPI': '^KS11',      # 코스피 지수 추가
+            'KOSDAQ': '^KQ11',     # 코스닥 지수 추가
             'S&P500': '^GSPC',
             'NASDAQ': '^IXIC',
             'VIX': '^VIX',
